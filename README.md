@@ -1,19 +1,13 @@
-# pwa
+# PWA
 
-## Project setup
-```
-npm install
-```
+- 使用套件**register-service-worker**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- 相關檔案
+  ./src/registerServiceWorker.js
+  ./src/mian.js (在進入檔中引入 registerServiceWorker.js)
+  ./pubic/img/icons/\* （各種 pwa 尺寸圖檔）
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 測試環境連結
+  https://lian0103.github.io/pwa/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+29/Jun/2023 updated by Jason Lien
