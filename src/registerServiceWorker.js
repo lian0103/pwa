@@ -32,5 +32,11 @@ if (process.env.NODE_ENV === "production") {
     onerror(error) {
       console.error("Error during service worker registration:", error);
     },
+    onmessage(msg) {
+      console.log("get msg", msg);
+    },
+    onstatechange(state) {
+      console.log("in onstatechange", state);
+    },
   });
 }
