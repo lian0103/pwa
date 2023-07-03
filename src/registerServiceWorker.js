@@ -30,6 +30,9 @@ if (process.env.NODE_ENV === "production") {
       console.log(
         "No internet connection found. App is running in offline mode."
       );
+      window.alert(
+        "No internet connection found. App is running in offline mode."
+      );
     },
     error(error) {
       console.error("Error during service worker registration:", error);
@@ -42,3 +45,7 @@ if (process.env.NODE_ENV === "production") {
     },
   });
 }
+
+navigator.serviceWorker.addEventListener("offline", () => {
+  window.alert("offline? in here?");
+});
