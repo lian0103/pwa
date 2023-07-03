@@ -20,16 +20,18 @@ if (process.env.NODE_ENV === "production") {
     },
     updatefound() {
       console.log("New content is downloading.");
+      window.alert("New content is downloading.!");
     },
     updated() {
       console.log("New content is available; please refresh.");
+      window.alert("New content is available; please refresh.");
     },
     offline() {
       console.log(
         "No internet connection found. App is running in offline mode."
       );
     },
-    onerror(error) {
+    error(error) {
       console.error("Error during service worker registration:", error);
     },
     onmessage(msg) {
