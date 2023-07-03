@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "production") {
           "For more details, visit https://goo.gl/AFskqB"
       );
 
-      navigator.serviceWorker.addEventListener("offline", () => {
+      self.addEventListener("offline", () => {
         window.alert("offline? in here?");
       });
     },
