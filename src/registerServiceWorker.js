@@ -12,9 +12,11 @@ if (process.env.NODE_ENV === "production") {
     },
     registered() {
       console.log("Service worker has been registered.");
+      window.alert("registered!");
     },
     cached() {
       console.log("Content has been cached for offline use.");
+      window.alert("cached!");
     },
     updatefound() {
       console.log("New content is downloading.");
@@ -26,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
       console.log(
         "No internet connection found. App is running in offline mode."
       );
-      alert("沒網路嘍!");
+      window.alert("沒網路嘍!");
     },
     error(error) {
       console.error("Error during service worker registration:", error);
