@@ -11,41 +11,24 @@ if (process.env.NODE_ENV === "production") {
       );
 
       self.addEventListener("offline", () => {
-        window.alert("offline? in here?");
+        window.alert("進入離線狀態");
       });
     },
     registered() {
       console.log("Service worker has been registered.");
-      window.alert("registered!");
+      window.alert("service worker註冊完成");
     },
     cached() {
       console.log("Content has been cached for offline use.");
-      window.alert("cached!");
+      window.alert("應用已緩存在本地");
     },
     updatefound() {
       console.log("New content is downloading.");
-      window.alert("New content is downloading.!");
+      window.alert("有更新內容，下載中");
     },
     updated() {
       console.log("New content is available; please refresh.");
-      window.alert("New content is available; please refresh.");
-    },
-    offline() {
-      console.log(
-        "No internet connection found. App is running in offline mode."
-      );
-      window.alert(
-        "No internet connection found. App is running in offline mode."
-      );
-    },
-    error(error) {
-      console.error("Error during service worker registration:", error);
-    },
-    onmessage(msg) {
-      console.log("get msg", msg);
-    },
-    onstatechange(state) {
-      console.log("in onstatechange", state);
+      window.alert("更新內容已可使用，請重新開啟");
     },
   });
 }
