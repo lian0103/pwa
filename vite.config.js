@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { createVuePlugin } from 'vite-plugin-vue2';
 import path from 'path';
-import { VitePWA } from 'vite-plugin-pwa'
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   alias: {
@@ -11,11 +11,32 @@ export default defineConfig({
   plugins: [
     // vue()
     createVuePlugin(),
-    VitePWA({ registerType: 'autoUpdate' })
+    VitePWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'My Vite PWA',
+        short_name: 'My PWA',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: '/img/icons/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/img/icons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+        apple: {
+          icon: '/img/icons/apple-touch-icon.png',
+          statusBarStyle: 'black-translucent', 
+        },
+      },
+    }),
   ],
-  build:{
-    outDir:'./docs'
-  }
+  build: {
+    outDir: './docs',
+  },
 });
-
-

@@ -1,1 +1,26 @@
-{"name":"pwa","short_name":"pwa","start_url":"/pwa/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/pwa/"}
+{
+    "name": "My Vite PWA",
+    "short_name": "My PWA",
+    "start_url": "/pwa/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "lang": "en",
+    "scope": "/pwa/",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "apple": {
+        "icon": "/img/icons/apple-touch-icon.png",
+        "statusBarStyle": "black-translucent"
+    }
+}
