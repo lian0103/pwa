@@ -31,8 +31,10 @@ export default defineConfig({
         ],
         apple: {
           icon: '/pwa/img/icons/apple-touch-icon.png',
-          statusBarStyle: 'black-translucent', 
+          statusBarStyle: 'black-translucent',
         },
+        icon: '/pwa/img/icons/msapplication-icon-144x144',
+        maskable: true,
       },
     }),
   ],
