@@ -90,6 +90,7 @@
       iusto omnis provident eius quibusdam nesciunt est qui officia, fugit
       asperiores! Temporibus, aspernatur.
     </p>
+    <p>use vite plugin~~</p>
   </div>
 </template>
 
