@@ -28,6 +28,12 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
           },
+          {
+            src: '/pwa/img/icons/msapplication-icon-144x144.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
         ],
         apple: {
           icon: '/pwa/img/icons/apple-touch-icon.png',
