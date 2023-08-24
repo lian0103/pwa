@@ -19,18 +19,18 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/img/icons/android-chrome-192x192.png',
+            src: '/pwa/img/icons/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/img/icons/android-chrome-512x512.png',
+            src: '/pwa/img/icons/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
         ],
         apple: {
-          icon: '/img/icons/apple-touch-icon.png',
+          icon: '/pwa/img/icons/apple-touch-icon.png',
           statusBarStyle: 'black-translucent', 
         },
       },
