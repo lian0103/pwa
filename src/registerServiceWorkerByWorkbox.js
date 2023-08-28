@@ -1,6 +1,9 @@
 import {Workbox} from 'workbox-window';
 
-const wb = new Workbox('/sw.js');
+console.log('-----------')
+
+
+const wb = new Workbox('/pwa/sw.js');
 wb.register();
 
 const swVersion = await wb.messageSW({type: 'GET_VERSION'});
